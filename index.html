@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlib v1</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Madlib!</h1>
+        </div>
+        <div class="wrapper">
+            <h2>Instructions</h2>
+        </div>
+        <div>
+            <h3>Fill in all of the input boxes, then click the Generate Madlib button</h3>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section>
+                <form id="generateMadlib" action="#" method="POST">
+                    <label>
+                            Noun
+                      
+                    <input type="text" name="noun" id="noun" placeholder="noun" />
+                    </label>
+                    <label>
+                        Adjective   
+                    
+                    <input type="text" name="adjective" id="adjective" placeholder="adjective" />
+                    </label>
+                    <label>
+                         Another Noun
+
+                    <input type="text" name="anotherNoun" id="anotherNoun" placeholder="anotherNoun" />
+                    </label>
+                    <label>
+                        Place
+                  
+                    <input type="text" name="place" id="place" placeholder="place" />
+                    </label>
+                    <button type="submit">Generate Madlib</button>
+
+
+                </form>
+            </section>
+            <section>
+
+                <p>After hiding the books in his <span id="nounResponse" class="madlib_placeholder"></span>for two years, he grew <span id="adjectiveResponse" class="madlib_placeholder"></span>and tried to sell them to a <span id="anotherNounResponse" class="madlib_placeholder">in<span id="placeResponse" class="madlib_placeholder"></span>
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="js/scripts.js"></script>
+
+</html>
