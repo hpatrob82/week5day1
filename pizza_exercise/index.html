@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizza Order Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <style div style="background-image: url('abstract-wallpaper-15572324177B2\ \(1\).jpg');"></style>
+
+    <h1>Welcome to Hilda's Pizza!</h1>
+    <br>
+    <legend>Please enter your information below:</legend>
+
+    <form action="/my-handling-form-page" method="post">
+        <fieldset>
+            <p>
+                <label>
+                    Name:
+                    <input type="text" id="name" name="name" />
+                    </label>
+            </p>
+            <label>
+                    Delivery Address:
+                    <input type="address" id="address"  name="address" />
+                </label>
+            <label>
+                    Phone Number:
+                <input type="phone" id="phone"  name="phone" />
+                </label>
+        </fieldset>
+
+        <h1>Menu</h1>
+        <br>
+        <h2>Select all your igredients</h2>
+        <br>
+
+
+    </form>
+    <br>
+
+    <div id="cheese">
+        <h3>Select Cheese</h3>
+        <div class="menu">
+            <input type="checkbox" name="cheese" value="No"> No Cheese<br>
+            <input type="checkbox" name="cheese" value="Regular"> Regular<br>
+            <input type="checkbox" name="cheese" value="Extra"> Extra Cheese<br>
+        </div>
+    </div>
+    <br>
+
+
+
+    <h4 class="tablehead">Select crust:</h4>
+    <div class="crust menu">
+        <input type="checkbox" name="crust" value="Plain"> Plain Crust<br>
+        <input type="checkbox" name="crust" value="Garlic Butter"> Garlic Butter Crust<br>
+        <input type="checkbox" name="crust" value="Cheese-Stuffed"> Cheese-Stuffed Crust<br>
+        <input type="checkbox" name="crust" value="Spicy"> Spicy Crust<br>
+        <input type="checkbox" name="crust" value="House Special"> House Special Crust<br>
+    </div>
+    </div>
+    <br>
+
+    <div id="saucetable">
+        <h5 class="tablehead">Select sauce:</h5>
+        <div class="sauce menu">
+            <input type="checkbox" name="sauce" value="Marinara"> Marinara Sauce<br>
+            <input type="checkbox" name="sauce" value="White"> White Sauce<br>
+            <input type="checkbox" name="sauce" value="Barbecue"> Barbecue Sauce<br>
+            <input type="checkbox" name="sauce" value="No"> No Sauce<br>
+        </div>
+    </div>
+    <br>
+
+
+
+    <div id="meattable">
+        <h3 class="tablehead">Select your choice of meat(s):</h3>
+        <div class="meat menu">
+            <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
+            <input type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+            <input type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+            <input type="checkbox" name="meat" value="Anchovies"> Anchovies<br>
+            <input type="checkbox" name="meat" value="Chicken"> Chicken<br>
+        </div>
+    </div>
+    <br>
+
+
+    <div id="vegtable">
+        <h3 class="tablehead">Select your choice of veggie(s):</h3>
+        <div class="menu initiallyHidden">
+            <input type="checkbox" name="veg" value="Tomatoes"> Fresh Tomatoes<br>
+            <input type="checkbox" name="veg" value="Onions"> Onions<br>
+            <input type="checkbox" name="veg" value="Olives"> Black Olives<br>
+            <input type="checkbox" name="veg" value="Green Peppers"> Green Peppers<br>
+            <input type="checkbox" name="veg" value="Mushrooms"> Mushrooms<br>
+            <input type="checkbox" name="veg" value="Pineapple"> Pineapple<br>
+            <input type="checkbox" name="veg" value="Spinach"> Spinach<br>
+            <input type="checkbox" name="veg" value="Jalape&ntildeo"> Jalape&ntildeo<br>
+        </div>
+    </div>
+    <br>
+
+    <button id="text" type="submit" onclick="invoice()">Submit order</button>
+    <br>
+
+
+
+
+
+</body>
+<script src="js/get.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>
